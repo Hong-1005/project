@@ -132,7 +132,13 @@ row-gap: 25px ; */
     height: 700px;
 }
 
+.portfolio-2 h1 {
+    font-size: 24px;
+    text-align: center;
+    margin: 60px;
+    font-family: Zen Old Mincho;
 
+}
 
 .portfolio-2 h2 {
     font-size: 20px;
