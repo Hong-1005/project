@@ -1,0 +1,219 @@
+@import url('reset.css');
+@import url('default.css');
+
+
+
+.warrper {
+    margin: 0 auto;
+}
+
+.warrper h1 {
+    margin: 60px;
+    font-family: Zen Old Mincho;
+    text-align: center;
+    font-size: 24px;
+
+}
+
+.warrper ul {
+    justify-content: center;
+
+    /* column-gap: 10px;
+row-gap: 25px ; */
+
+    margin: 0 auto;
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.warrper li {
+
+    margin: 25px;
+    
+    border: 1.5px #c5c5c5 solid;
+    text-align: center;    
+}
+
+.warrper h2 {
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 18px;
+    color: #646464;
+}
+
+.warrper p {
+    margin: 30px auto 50px;
+    width: 600px;
+    letter-spacing: 5px;
+
+    font-size: 16px;
+    text-align: center;
+}
+
+.warrper a {
+    /* padding: 30px; */
+    display: block;
+    text-decoration: none;
+    
+}
+
+.warrper img {
+    margin: 0 20px;
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+}
+
+/* .warrper h2 {
+    margin: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #646464;
+} */
+
+
+
+
+
+.page-number {
+    justify-content: center;
+    display: flex;
+    margin: 30px auto;
+}
+
+.page-number p {
+    color: #646464;
+    font-size: 16px;
+    margin: auto 15px;
+}
+
+/* portfolio-2 */
+
+
+.portfolio li:hover {
+
+    box-shadow: 4px 4px 4px rgb(0, 0, 0, 0.5);
+    transition: 0.5s;
+}
+
+
+
+
+
+.contrast {
+    position: relative;
+    width: 1200px;
+    height: 700px;
+
+}
+
+
+.contrast:hover .be {
+    opacity: 0;
+
+
+    transition: 0.5s;
+
+
+}
+
+
+
+
+
+.contrast img {
+    margin: 0 auto;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1200px;
+    height: 700px;
+}
+
+
+
+.portfolio-2 h2{
+    font-size: 20px;
+    margin-top: 60px;
+    text-align: center;
+
+}
+
+.portfolio-2 p{
+    font-size: 18px;
+    margin: 30px auto;
+    text-align: center;
+
+    line-height: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.btn {
+
+
+
+    border: none;
+
+    width: 150px;
+    height: 35px;
+    border-radius: 6px;
+
+    background-color: #6779CA;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin: 60px 525px;
+
+    box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.3);
+}
+
+.btn a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+.btn:hover {
+
+    box-shadow: inset 5px 5px 5px rgb(0, 0, 0, 0.3);
+}
+
+
+
+
+
+/*  */
+
+
+
+
+
+
+
+
+
+
+

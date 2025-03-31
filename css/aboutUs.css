@@ -1,0 +1,115 @@
+@import url('reset.css');
+@import url('default.css');
+
+.top {
+    width: 1200px;
+
+}
+
+.top h1 {
+    font-family: Zen Old Mincho;
+    font-size: 24px;
+    text-align: center;
+    margin: 60px 0;
+
+}
+
+.top h2 {
+    font-family: Zen Old Mincho;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 42px;
+}
+
+.top img {
+    width: 1200px;
+    height: 500px;
+    object-fit: cover;
+
+}
+
+.main {}
+
+.main h2 {
+    font-family: Zen Old Mincho;
+
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 42px;
+    margin: 60px 0;
+}
+
+.main p {
+    text-align: center;
+    line-height: 30px;
+
+    width: 1000px;
+    font-size: 18px;
+    /* font-weight: lighter; */
+    margin: 0 auto;
+    margin-bottom: 120px;
+}
+
+
+.comment {}
+
+.comment h2 {
+    font-family: Zen Old Mincho;
+
+    /* font-weight: bold; */
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+
+.cards {
+    display: flex;
+    margin-bottom: 80px;
+
+}
+
+.cards li {
+    width: 350px;
+    height: 415px;
+    text-align: center;
+    margin: 30px;
+
+    border: 1px black solid;
+}
+
+
+
+
+.cards img {
+    width: 125px;
+    height: 125px;
+    border-radius: 125px;
+    margin-top: 30px;
+}
+
+.stars img {
+    width: 125px;
+    height: 28px;
+}
+
+.cards h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px auto;
+}
+
+.cards p {
+    margin: 0 auto;
+    margin-bottom: 30px;
+    font-size: 14px;
+    line-height: 1.2;
+    width: 250px;
+}
+
+.btn-top {
+
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+}

@@ -1,0 +1,303 @@
+@import url('reset.css');
+@import url('default.css');
+
+/* customized 1 */
+.warpper {
+    width: 1200px;
+}
+
+.warpper h1 {
+    font-family: Zen Old Mincho;
+    font-size: 24px;
+
+    text-align: center;
+    margin: 60px;
+}
+
+.warpper h2 {
+    /* font-family: Zen Old Mincho; */
+    font-size: 18px;
+
+    text-align: center;
+    margin: 60px;
+}
+
+
+.cards {
+    display: flex;
+    justify-content: center;
+    column-gap: 100px;
+
+    margin-bottom: 50px;
+}
+
+.cards li {
+    display: block;
+    position: relative;
+}
+
+.cards a {
+    display: block;
+    width: 300px;
+    height: 300px;
+}
+
+.cards a:hover {
+    box-shadow: 4px 4px 4px rgb(0, 0, 0, .5);
+    transition: 0.5s;
+
+
+}
+
+.cards a:hover img {
+    filter: blur(0px);
+    transition: 0.5s;
+}
+
+.cards a:hover span {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+
+
+.cards li img {
+    width: 300px;
+    height: 300px;
+    filter: blur(2px);
+
+    border-image: fill;
+}
+
+
+.cards span {
+    display: block;
+    width: 150px;
+    height: 50px;
+
+    font-family: Zen Old Mincho;
+    font-size: 20px;
+    font-weight: bold;
+
+    text-align: center;
+    line-height: 50px;
+
+
+    color: white;
+    background-color: black;
+    opacity: .5;
+
+    position: absolute;
+    bottom: 100px;
+    left: 70px;
+
+    letter-spacing: 5px;
+
+}
+
+
+/* customized 2 */
+
+
+.select {
+    display: flexbox;
+    justify-items: center;
+
+
+
+    width: 1200px;
+
+
+    font-family: Zen Old Mincho;
+    font-size: 20px;
+
+}
+
+
+
+.select li {
+    width: 300px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+select {
+    width: 126px;
+    height: 32px;
+}
+
+
+
+.input {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+.length {
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+input {
+    width: 122px;
+    height: 28px;
+    padding: 0;
+    margin-bottom: 5px;
+
+}
+
+
+
+
+
+
+button {
+    border: none;
+
+    width: 150px;
+    height: 35px;
+    border-radius: 6px;
+
+    background-color: #6779CA;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin: 60px 525px;
+
+    box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.3);
+}
+
+button:hover {
+
+    box-shadow: inset 5px 5px 5px rgb(0, 0, 0, 0.3);
+}
+
+
+
+/* customized 3 */
+
+.option {
+    display: flexbox;
+    justify-items: center;
+
+    width: 1200px;
+
+    font-family: Zen Old Mincho;
+    font-size: 20px;
+}
+
+.option li {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 10px;
+}
+
+.option li:nth-child(3) {
+
+    width: 300px;
+
+
+}
+
+
+
+
+.choose {
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+}
+
+.choose input {
+    width: 20px;
+    vertical-align: middle;
+}
+
+
+.parts {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.Preview {
+    width: 300px;
+    display: flex;
+    text-align: center;
+
+}
+
+
+.Preview img {
+    margin: 20px 20px;
+    width: 60px;
+    height: 60px;
+}
+
+
+/* customized 4 */
+
+.warpper {}
+
+
+.customized4 {
+    margin: 40px auto;
+    text-align: center;
+    width: 1000px;
+    /* font-family: Zen Old Mincho; */
+    line-height: 1.6;
+    /* letter-spacing: 5px; */
+
+}
+
+
+
+
+.preview {
+    margin: 12px auto;
+
+    width: 800px;
+    height: 100px;
+
+    display: flex;
+    column-gap: 5px;
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+.preview img {
+    width: 40px;
+    height: 40px;
+}
+
+.preview img:hover {
+    width: 60px;
+    height: 60px;
+}
+
+.slider {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.slider img {
+
+    width: 1000px;
+
+
+}
