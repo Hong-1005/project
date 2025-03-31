@@ -30,9 +30,9 @@ row-gap: 25px ; */
 .warrper li {
 
     margin: 25px;
-    
+
     border: 1.5px #c5c5c5 solid;
-    text-align: center;    
+    text-align: center;
 }
 
 .warrper h2 {
@@ -55,7 +55,7 @@ row-gap: 25px ; */
     /* padding: 30px; */
     display: block;
     text-decoration: none;
-    
+
 }
 
 .warrper img {
@@ -134,14 +134,14 @@ row-gap: 25px ; */
 
 
 
-.portfolio-2 h2{
+.portfolio-2 h2 {
     font-size: 20px;
     margin-top: 60px;
     text-align: center;
 
 }
 
-.portfolio-2 p{
+.portfolio-2 p {
     font-size: 18px;
     margin: 30px auto;
     text-align: center;
@@ -206,14 +206,3 @@ row-gap: 25px ; */
 
 
 /*  */
-
-
-
-
-
-
-
-
-
-
-

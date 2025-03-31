@@ -1,6 +1,10 @@
 @import url('reset.css');
 @import url('default.css');
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     width: 1200px;
     margin: 0 auto;
@@ -190,7 +194,7 @@ span h3 {
 }
 
 span p {
-    
+
     margin: 0;
     width: 600px;
 }
@@ -290,7 +294,7 @@ span {
 
 }
 
-.footer p{
+.footer p {
     text-align: left;
 
 }

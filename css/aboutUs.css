@@ -1,6 +1,10 @@
 @import url('reset.css');
 @import url('default.css');
 
+html {
+    scroll-behavior: smooth;
+}
+
 .top {
     width: 1200px;
 
