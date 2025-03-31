@@ -113,7 +113,13 @@ html {
 
 .btn-top {
 
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     border-radius: 60px;
+
+    float: right;
+
+    position: fixed;
+    top: 200px;
+    right: 30px;
 }

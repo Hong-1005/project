@@ -90,12 +90,19 @@ row-gap: 25px ; */
 
 /* portfolio-2 */
 
+.portfolio li{
+    box-shadow: 0 0 0 rgb(0, 0, 0, 0.0);
+    transition: 0.5s;
+}
+
 
 .portfolio li:hover {
 
     box-shadow: 4px 4px 4px rgb(0, 0, 0, 0.5);
-    transition: 0.5s;
+    
+    
 }
+
 
 
 
@@ -105,15 +112,18 @@ row-gap: 25px ; */
     position: relative;
     width: 1200px;
     height: 700px;
+    transition: 1s;
 
 }
-
+.be{
+    transition: 1s;
+}
 
 .contrast:hover .be {
     opacity: 0;
 
 
-    transition: 0.5s;
+    
 
 
 }
