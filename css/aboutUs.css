@@ -117,9 +117,8 @@ html {
     height: 50px;
     border-radius: 60px;
 
-    float: right;
 
     position: fixed;
-    top: 200px;
-    right: 30px;
+    top: 530px;
+    right: 50px;
 }

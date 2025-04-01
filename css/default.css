@@ -1,3 +1,10 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+
 body {
     width: 1200px;
     margin: 0 auto;
@@ -83,6 +90,16 @@ body {
 }
 
 
-.footer a:nth-child(2){
+.footer a:nth-child(2) {
     margin-right: 10px;
+}
+
+
+.btn-top img {
+    width: 50px;
+    height: 50px;
+
+    position: fixed;
+    top: 530px;
+    right: 50px;
 }

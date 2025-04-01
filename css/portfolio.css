@@ -1,7 +1,9 @@
 @import url('reset.css');
 @import url('default.css');
 
-
+html {
+    scroll-behavior: smooth;
+}
 
 .warrper {
     margin: 0 auto;
@@ -90,7 +92,7 @@ row-gap: 25px ; */
 
 /* portfolio-2 */
 
-.portfolio li{
+.portfolio li {
     box-shadow: 0 0 0 rgb(0, 0, 0, 0.0);
     transition: 0.5s;
 }
@@ -99,8 +101,8 @@ row-gap: 25px ; */
 .portfolio li:hover {
 
     box-shadow: 4px 4px 4px rgb(0, 0, 0, 0.5);
-    
-    
+
+
 }
 
 
@@ -115,7 +117,8 @@ row-gap: 25px ; */
     transition: 1s;
 
 }
-.be{
+
+.be {
     transition: 1s;
 }
 
@@ -123,7 +126,7 @@ row-gap: 25px ; */
     opacity: 0;
 
 
-    
+
 
 
 }
@@ -217,7 +220,17 @@ row-gap: 25px ; */
     box-shadow: inset 5px 5px 5px rgb(0, 0, 0, 0.3);
 }
 
+.btn-top img{
 
+    width: 50px;
+    height: 50px;
+    
+
+
+    position: fixed;
+    top: 530px;
+    right: 50px;
+}
 
 
 
