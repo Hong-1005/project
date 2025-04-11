@@ -46,7 +46,7 @@ html {
 .main p {
     text-align: center;
     line-height: 30px;
-
+font-family: Zen Old Mincho;
     width: 1000px;
     font-size: 18px;
     /* font-weight: lighter; */
@@ -55,61 +55,7 @@ html {
 }
 
 
-.comment {}
 
-.comment h2 {
-    font-family: Zen Old Mincho;
-
-    /* font-weight: bold; */
-    font-size: 24px;
-    text-align: center;
-    margin-bottom: 60px;
-}
-
-
-.cards {
-    display: flex;
-    margin-bottom: 80px;
-
-}
-
-.cards li {
-    width: 350px;
-    height: 415px;
-    text-align: center;
-    margin: 30px;
-
-    border: 1px black solid;
-}
-
-
-
-
-.cards img {
-    width: 125px;
-    height: 125px;
-    border-radius: 125px;
-    margin-top: 30px;
-}
-
-.stars img {
-    width: 125px;
-    height: 28px;
-}
-
-.cards h3 {
-    font-size: 20px;
-    font-weight: bold;
-    margin: 20px auto;
-}
-
-.cards p {
-    margin: 0 auto;
-    margin-bottom: 30px;
-    font-size: 14px;
-    line-height: 1.2;
-    width: 250px;
-}
 
 .btn-top {
 
