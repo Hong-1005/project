@@ -10,6 +10,23 @@ html {
 
 }
 
+
+.bunner {
+    width: 1200px;
+    height: 400px;
+
+
+    background-image: url('../img/bunner2.jpg');
+    background-position: top;
+    background-size: 100%;
+
+    background-attachment: fixed;
+}
+
+
+
+
+
 .top h1 {
     font-family: Zen Old Mincho;
     font-size: 24px;
@@ -25,13 +42,6 @@ html {
     margin-bottom: 42px;
 }
 
-.top img {
-    width: 1200px;
-    height: 500px;
-    object-fit: cover;
-
-}
-
 .main {}
 
 .main h2 {
@@ -43,16 +53,19 @@ html {
     margin: 60px 0;
 }
 
-.main p {
+/*  */
+
+.text-block {
     text-align: center;
-    line-height: 30px;
-font-family: Zen Old Mincho;
-    width: 1000px;
+    margin: 20px;
+
+    font-family: Zen Old Mincho;
+    line-height: 1.6;
     font-size: 18px;
-    /* font-weight: lighter; */
-    margin: 0 auto;
-    margin-bottom: 120px;
+    opacity: 0;
+    transition: transform 0.5s ease;
 }
+
 
 
 

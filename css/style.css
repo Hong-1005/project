@@ -22,15 +22,15 @@ body {
     width: 1200px;
 }
 
-.banner{
-width: 1200px;
-height: 400px;
+.banner {
+    width: 1200px;
+    height: 400px;
 
-  
+
     background-image: url('../img/banner.jpg');
-    background-position:top;
+    background-position: top;
     background-size: 100%;
-    
+
     background-attachment: fixed;
 }
 
@@ -79,7 +79,7 @@ height: 400px;
     text-align: center;
     line-height: 30px;
     font-size: 18px;
-font-family:Zen Old Mincho ;
+    font-family: Zen Old Mincho;
 }
 
 
@@ -188,6 +188,82 @@ span {
 
 .comment {}
 
+/* ai */
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* 輪播列表 */
+.carousel-list {
+    display: flex;
+    transition: transform 0.5s ease;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    width: 300px;
+    /* gap: 10px; */
+    /* justify-content: center;
+    gap: 30px; */
+}
+
+/* 卡片基本樣式 - 這裡只放與輪播相關的樣式，其他卡片樣式請自行保留 */
+.cards {
+    flex: 0 0 100%;
+    transition: opacity 0.3s ease;
+
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+    margin-bottom: 30px;
+
+    margin-right: 10px;
+
+    text-align: center;
+
+    border: #646464 1px solid;
+    box-shadow: 4px 4px 4px rgb(0, 0, 0, 0.3);
+}
+
+
+
+
+/*  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .comment h2 {
     font-family: Zen Old Mincho;
 
@@ -197,14 +273,14 @@ span {
     margin-bottom: 60px;
 }
 
-.comment ul {
+/* .comment ul {
     width: 1200px;
     display: flex;
     justify-content: center;
     gap: 30px;
-}
+} */
 
-.cards {
+/* .cards {
     width: 300px;
     height: 300px;
     padding: 20px;
@@ -214,7 +290,7 @@ span {
 
     border: #646464 1px solid;
     box-shadow: 4px 4px 4px rgb(0, 0, 0, 0.3);
-}
+} */
 
 .cards img {
     width: 70px;
@@ -233,9 +309,9 @@ span {
 .cards span {
     font-size: 12px;
 
-font-family: Zen Old Mincho;
+    font-family: Zen Old Mincho;
 
-line-height: 1.6;
+    line-height: 1.6;
     width: 300px;
     margin: 20px auto;
 
@@ -254,18 +330,18 @@ line-height: 1.6;
     background-color: #F6F6FA;
 }
 
-.write-place select{
+.write-place select {
     width: 100px;
     height: 32px;
 }
 
 
 .write1 {
-    
+
     margin: 15px;
 }
 
-.write1 label{
+.write1 label {
     font-size: 16px;
 
 }
@@ -284,22 +360,14 @@ line-height: 1.6;
 .write2 label {
     font-size: 16px;
     vertical-align: top
-    
 }
 
 .write2 textarea {
     resize: none;
     width: 300px;
     height: 100px;
-margin-top: 10px;
+    margin-top: 10px;
 }
-
-
-
-
-
-
-
 
 
 .googleMap {
@@ -328,7 +396,3 @@ margin-top: 10px;
     right: 50px;
 }
 
-.footer p {
-    text-align: left;
-
-}
