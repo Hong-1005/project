@@ -22,6 +22,21 @@ body {
     width: 1200px;
 }
 
+.banner{
+width: 1200px;
+height: 400px;
+
+  
+    background-image: url('../img/banner.jpg');
+    background-position:top;
+    background-size: 100%;
+    
+    background-attachment: fixed;
+}
+
+
+
+
 .warrper h1 {
     font-size: 24px;
     font-family: Zen Old Mincho;
@@ -231,41 +246,53 @@ line-height: 1.6;
 .write-place {
     margin: 0 auto;
 
+    font-family: Zen Old Mincho;
+
     border: #646464 1px solid;
-    width: 400px;
+    width: 500px;
 
     background-color: #F6F6FA;
 }
 
+.write-place select{
+    width: 100px;
+    height: 32px;
+}
+
+
 .write1 {
+    
     margin: 15px;
 }
 
-.write1 label {
+.write1 label{
     font-size: 16px;
+
 }
 
 .write1 input {
     width: 70px;
+    margin: 5px;
 }
 
 
 .write2 {
+    font-family: Zen Old Mincho;
     margin: 15px;
 }
 
 .write2 label {
     font-size: 16px;
     vertical-align: top
+    
 }
 
-.write2 input {
+.write2 textarea {
+    resize: none;
     width: 300px;
     height: 100px;
-
+margin-top: 10px;
 }
-
-
 
 
 
