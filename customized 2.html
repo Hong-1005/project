@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="css/customized.css">
+    <link rel="stylesheet" href="css/default.css">
     <link rel="icon" href="img/link-logo.svg">
  <!-- font-awesome -->
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
@@ -23,15 +24,45 @@
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src="js/customized.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="js/default.js"></script>
+        <script src="js/customized2.js"></script>
+        
     <title>龍祥沙發</title>
 </head>
 
 <body>
+    <!-- 自訂彈跳視窗 -->
+<div id="customModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p id="customMessage"></p>
+      <a href="<https://line.me/ti/p/aArdA2i8uC>"><img id="qrCode" src="img/lineQRcore.jpg" alt="QR Code" style="width:150px; margin-top: 10px;"></a>
+    </div>
+  </div>
+ <!-- hamburger -->
+ <div class="navbar">
+    <div class="navbar-container">
 
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <nav class="mobile-menu" id="mobileMenu">
+      <a href="index.html">首頁</a>
+      <a href="aboutUs.html">關於我們</a>
+      <a href="portfolio-1.html">案例分享</a>
+      <a href="customized 1.html">修理訂做</a>
+      <a href="customized 4.html">廠商詢問</a>
+      <a href="contact.html">聯絡估價</a>
+    </nav>
+</div>
     <!-- header -->
     <div class="head">
 
-        <a class="logo-top" href="index.html"><img src="img/logo-top.png" alt=""></a>
+        <a class="logo-top" href="index.html"><img src="img/logo-top.svg" alt=""></a>
         <ul>
             <li>
                 <a href="index.html">
@@ -107,8 +138,9 @@
                 <span class="input">
                     <label for="text">大約長寬 :</label>
                     <div class="length">
-                        <input type="text" name="text" id="text" placeholder="長( m )">
-                        <input type="text" name="text" id="text" placeholder="寬( m )">
+                        <input type="text" name="length" id="length" placeholder="長( m )">
+                        <input type="text" name="width" id="width" placeholder="寬( m )">
+                        
                     </div>
                 </span>
             </li>
@@ -120,12 +152,12 @@
 
 
 
-        <button id="estimateBtn">
+        <button class="btn">
             初步估價
         </button>
 
     </div>
-    <a class="btn-top" href="#head"><img src="img/btn-top.svg" alt=""></a>
+    <a id="goTopBtn" class="btn-top" href="#head"><img src="img/btn-top.svg" alt=""></a>
 
 
     <!-- footer -->
@@ -133,7 +165,7 @@
 
     <div class="footer">
         <p>地址：台北市中山區南京東路三段219號4F　｜　連絡電話：0932-120-811　｜　市話：02 2712 0589</p>
-        <div>
+        <div class="fontawesome">
             <a href=""><i class="fa-brands fa-line fas fa-star fa-2x" style="color: white;"></i></a>
             <a href=""><i class="fa-brands fa-square-facebook fas fa-star fa-2x" style="color: white;"></i></a>
         </div>

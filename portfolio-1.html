@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>龍祥沙發</title>
     <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/default.css">
  <!-- font-awesome -->
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,13 +16,35 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     
     <link rel="icon" href="img/link-logo.svg">
+    <!-- js -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/default.js"></script>
 </head>
 
 <body>
+     <!-- hamburger -->
+     <div class="navbar">
+        <div class="navbar-container">
+
+          <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <nav class="mobile-menu" id="mobileMenu">
+          <a href="index.html">首頁</a>
+          <a href="aboutUs.html">關於我們</a>
+          <a href="portfolio-1.html">案例分享</a>
+          <a href="customized 1.html">修理訂做</a>
+          <a href="customized 4.html">廠商詢問</a>
+          <a href="contact.html">聯絡估價</a>
+        </nav>
+    </div>
     <!-- head -->
     <div class="head" id="head">
 
-        <a class="logo-top" href="index.html"><img src="img/logo-top.png" alt=""></a>
+        <a class="logo-top" href="index.html"><img src="img/logo-top.svg" alt=""></a>
         <ul>
             <li>
                 <a href="index.html">
@@ -75,7 +98,7 @@
             </li>
             <li>
                 <a href="portfolio-2.html">
-                    <img src="img/sofa/portfolio1.JPG" alt="">
+                    <img src="img/sofa/portfolio2-af.JPG" alt="">
                     <h2>
                         古典沙發修復
                     </h2>
@@ -83,7 +106,7 @@
             </li>
             <li>
                 <a href="portfolio-2.html">
-                    <img src="img/sofa/portfolio1.JPG" alt="">
+                    <img src="img/sofa/portfolio4-af.JPG" alt="">
                     <h2>
                         古典沙發修復
                     </h2>
@@ -91,7 +114,7 @@
             </li>
             <li>
                 <a href="portfolio-2.html">
-                    <img src="img/sofa/portfolio1.JPG" alt="">
+                    <img src="img/sofa/IMG_5270.JPG" alt="">
                     <h2>
                         古典沙發修復
                     </h2>
@@ -99,7 +122,7 @@
             </li>
             <li>
                 <a href="portfolio-2.html">
-                    <img src="img/sofa/portfolio1.JPG" alt="">
+                    <img src="img/sofa/portfolio5-af.JPG" alt="">
                     <h2>
                         古典沙發修復
                     </h2>
@@ -107,15 +130,7 @@
             </li>
             <li>
                 <a href="portfolio-2.html">
-                    <img src="img/sofa/portfolio1.JPG" alt="">
-                    <h2>
-                        古典沙發修復
-                    </h2>
-                </a>
-            </li>
-            <li>
-                <a href="portfolio-2.html">
-                    <img src="img/sofa/portfolio1.JPG" alt="">
+                    <img src="img/sofa/portfolio2-af.JPG" alt="">
                     <h2>
                         古典沙發修復
                     </h2>
@@ -127,14 +142,15 @@
 
 
 
-    <a class="btn-top" href="#head"><img src="img/btn-top.svg" alt=""></a>
+    <a id="goTopBtn" class="btn-top" href="#head"><img src="img/btn-top.svg" alt=""></a>
+    
 
 
 
     <!-- footer -->
     <div class="footer">
         <p>地址：台北市中山區南京東路三段219號4F　｜　連絡電話：0932-120-811　｜　市話：02 2712 0589</p>
-        <div>
+        <div class="fontawesome">
             <a href=""><i class="fa-brands fa-line fas fa-star fa-2x" style="color: white;"></i></a>
             <a href=""><i class="fa-brands fa-square-facebook fas fa-star fa-2x" style="color: white;"></i></a>
         </div>

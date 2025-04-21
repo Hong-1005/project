@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
+   
     <!-- font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <!-- font family -->
@@ -19,14 +20,35 @@
         href="https://fonts.googleapis.com/css2?family=Sigmar&family=Zen+Kaku+Gothic+New&family=Zen+Old+Mincho&display=swap"
         rel="stylesheet">
     <!-- JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <script src="js/index.js"></script>
+    <script src="js/default.js"></script>
     <!--  -->
     <title>龍祥沙發</title>
     <link rel="icon" href="img/link-logo.svg">
 </head>
 
 <body>
+    <!-- hamburger -->
+    <div class="navbar">
+        <div class="navbar-container">
+
+          <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <nav class="mobile-menu" id="mobileMenu">
+          <a href="index.html">首頁</a>
+          <a href="aboutUs.html">關於我們</a>
+          <a href="portfolio-1.html">案例分享</a>
+          <a href="customized 1.html">修理訂做</a>
+          <a href="customized 4.html">廠商詢問</a>
+          <a href="contact.html">聯絡估價</a>
+        </nav>
+    </div>
     <!-- header -->
     <div class="head" id="head">
 
@@ -69,11 +91,6 @@
 
     <div class="warrper">
 
-
-
-
-
-
         <h1>
             「沙發乘載家的重量。」
         </h1>
@@ -103,152 +120,75 @@
             <h2>
                 顧客好評與使用心得
             </h2>
-            <!-- <ul>
-                        <li class="cards">
-        
-                            <img src="img/male.svg" alt="">
-                            <h3>
-                                王先生｜沙發翻新
-                            </h3>
-                            <span>
-                                「家裡十幾年的皮沙發原本已經開始剝落、塌陷，本來想換新的，但找到了這家維修店，結果真的太滿意！店家不僅幫我們更換了全新的高級皮革，還加強了坐墊支撐，坐起來跟新的一樣，甚至比原本還舒服，真的物超所值！」
-                            </span>
-        
-                        </li>
-        
-                        <li class="cards">
-                            <img src="img/female.svg" alt="">
-                            <h3>
-                                林小姐｜客製沙發
-                            </h3>
-        
-                            <span>
-                                「我們家客廳尺寸比較特別，市面上買不到剛剛好的沙發，所以決定訂做一張。師傅很專業，幫我們量身訂製了剛好符合空間的L型沙發，布料、顏色都能自己選，做工細緻又耐看。現在家人每天都窩在沙發上，超級滿意！」
-                            </span>
-        
-                        </li>
-        
-                        <li class="cards">
-                            <img src="img/female.svg" alt="">
-                            <h3>
-                                張太太｜沙發修復與加固
-                            </h3>
-                            <span>
-                                「家裡的沙發因為小朋友常常跳來跳去，結果骨架都變形了，還會發出奇怪的聲音。這家店的維修技術很棒，不僅幫我們加固了骨架，還換了新的泡棉，坐起來更有支撐感，完全解決我們的困擾，服務又親切，推薦給大家！」
-                            </span>
-                        </li>
-                        
-        
-                    </ul>
-                </div> -->
 
+            <!-- 輪播牆 -->
             <div class="carousel-container">
-                <ul class="carousel-list">
-                    <li class="cards">
-                        <img src="img/male.svg" alt="">
-                        <h3>
-                            王先生｜沙發翻新
-                        </h3>
-                        <span>
-                            「家裡十幾年的皮沙發原本已經開始剝落、塌陷，本來想換新的，但找到了這家維修店，結果真的太滿意！店家不僅幫我們更換了全新的高級皮革，還加強了坐墊支撐，坐起來跟新的一樣，甚至比原本還舒服，真的物超所值！」
-                        </span>
-                    </li>
-                    <li class="cards">
-                        <img src="img/female.svg" alt="">
-                        <h3>
-                            林小姐｜客製沙發
-                        </h3>
-                        <span>
-                            「我們家客廳尺寸比較特別，市面上買不到剛剛好的沙發，所以決定訂做一張。師傅很專業，幫我們量身訂製了剛好符合空間的L型沙發，布料、顏色都能自己選，做工細緻又耐看。現在家人每天都窩在沙發上，超級滿意！」
-                        </span>
-                    </li>
-                    <li class="cards">
-                        <img src="img/female.svg" alt="">
-                        <h3>
-                            張太太｜沙發修復與加固
-                        </h3>
-                        <span>
-                            「家裡的沙發因為小朋友常常跳來跳去，結果骨架都變形了，還會發出奇怪的聲音。這家店的維修技術很棒，不僅幫我們加固了骨架，還換了新的泡棉，坐起來更有支撐感，完全解決我們的困擾，服務又親切，推薦給大家！」
-                        </span>
-                    </li>
-                    <li class="cards">
-                        <img src="img/male.svg" alt="">
-                        <h3>
-                            李先生｜老沙發換新裝
-                        </h3>
-                        <span>
-                            「有一張非常喜愛的古董沙發，用了20多年已經很破舊，但捨不得丟掉。找到這家店後，師傅不只幫我換了新布料，還改善了內部結構，保留了原有的風格但增加了舒適度，讓這張有紀念價值的沙發重獲新生！」
-                        </span>
-                    </li>
-                    <li class="cards">
-                        <img src="img/female.svg" alt="">
-                        <h3>
-                            陳小姐｜布沙發清潔
-                        </h3>
-                        <span>
-                            「家裡的布沙發用了幾年，已經有明顯的髒污和異味，自己清理效果不好。這家店的清潔服務非常專業，使用環保清潔劑深層清潔，洗完後沙發煥然一新，連多年的頑固污漬都清除了，價格也很合理！」
-                        </span>
-                    </li>
-                    <li class="cards">
-                        <img src="img/male.svg" alt="">
-                        <h3>
-                            黃先生｜皮沙發保養
-                        </h3>
-                        <span>
-                            「之前購買的高級皮沙發開始出現乾裂現象，擔心會越來越嚴重。店家提供的皮革保養服務非常到位，使用專業護理產品深層滋養，處理完後皮質變得柔軟有光澤，還教了我平時如何正確保養，服務很貼心！」
-                        </span>
-                    </li>
-                    <li class="cards">
-                        <img src="img/female.svg" alt="">
-                        <h3>
-                            楊太太｜沙發椅墊更換
-                        </h3>
-                        <span>
-                            「沙發框架還很好，但坐墊已經塌陷不舒服了。這家店只幫我更換了內部泡棉和椅墊，價格只有買新沙發的三分之一，但舒適度卻比新的還好！師傅根據我們的喜好調整了軟硬度，現在全家人都搶著坐呢！」
-                        </span>
-                    </li>
-                    <li class="cards">
-                        <img src="img/male.svg" alt="">
-                        <h3>
-                            吳先生｜辦公沙發翻新
-                        </h3>
-                        <span>
-                            「公司的接待區沙發使用多年已經顯得老舊，影響公司形象。委託這家店進行整體翻新後，不只外觀煥然一新，還根據我們辦公需求加強了支撐性，客戶來訪時都稱讚很有品味，服務超出預期！」
-                        </span>
-                    </li>
-                    <li class="cards">
-                        <img src="img/female.svg" alt="">
-                        <h3>
-                            鄭小姐｜沙發尺寸改造
-                        </h3>
-                        <span>
-                            「搬新家後發現原本的沙發太大，差一點點放不進電梯。找到這家店後，師傅巧妙地將三人座改造成兩人座加單人椅，不只解決了空間問題，還增加了使用彈性，改造後的設計反而更符合新家的風格！」
-                        </span>
-                    </li>
-                    <li class="cards">
-                        <img src="img/male.svg" alt="">
-                        <h3>
-                            蔡先生｜親子沙發安全升級
-                        </h3>
-                        <span>
-                            「家裡有小孩，擔心沙發的皮革太硬或有尖角。這家店幫我們將原本的皮沙發換成柔軟的布料，並且將所有角落都做了圓弧處理，還在扶手加了防護墊，既美觀又安全，是真正為家庭著想的貼心服務！」
-                        </span>
-                    </li>
-                </ul>
+                <div class="carousel-wrapper">
+                    <div class="carousel-track">
+                        
+                        <div class="carousel-item">
+                            <img src="img/male.svg" alt="輪播圖片1"> 
+                            <div class="carousel-caption">王先生｜沙發修理</div> 
+                            <div class="carousel-span">
+                                「家裡十幾年的皮沙發原本已經開始剝落、塌陷，本來想換新的，但找到了這家維修店，結果真的太滿意！店家不僅幫我們更換了全新的高級皮革，還加強了坐墊支撐，坐起來跟新的一樣，甚至比原本還舒服，真的物超所值！」
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="img/female.svg" alt="輪播圖片1"> 
+                            <div class="carousel-caption">黃小姐｜客製修理</div> 
+                            <div class="carousel-span">
+                                「我們家客廳尺寸比較特別，市面上買不到剛剛好的沙發，所以決定訂做一張。師傅很專業，幫我們量身訂製了剛好符合空間的L型沙發，布料、顏色都能自己選，做工細緻又耐看。現在家人每天都窩在沙發上，超級滿意！」
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/female.svg" alt="輪播圖片1"> 
+                            <div class="carousel-caption">張小姐｜沙發修理</div> 
+                            <div class="carousel-span">
+                                「家裡的沙發因為小朋友常常跳來跳去，結果骨架都變形了，還會發出奇怪的聲音。這家店的維修技術很棒，不僅幫我們加固了骨架，還換了新的泡棉，坐起來更有支撐感，完全解決我們的困擾，服務又親切，推薦給大家！」
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/male.svg" alt="輪播圖片1"> 
+                            <div class="carousel-caption">李先生｜沙發修理</div> 
+                            <div class="carousel-span">
+                                「有一張非常喜愛的古董沙發，用了20多年已經很破舊，但捨不得丟掉。找到這家店後，師傅不只幫我換了新布料，還改善了內部結構，保留了原有的風格但增加了舒適度，讓這張有紀念價值的沙發重獲新生！」
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/male.svg" alt="輪播圖片1">
+                            <div class="carousel-caption">王先生｜沙發修理</div>
+                            <div class="carousel-span">
+                                「我們家有一張十幾年的布沙發，原本坐墊塌陷、布面磨損嚴重，看起來真的非常老舊。經朋友推薦來這裡修理後，整個沙發變得像新的一樣，不只換了布料，坐起來也更舒適。師傅的手藝真的讓人佩服！」
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/female.svg" alt="輪播圖片2">
+                            <div class="carousel-caption">林小姐｜客製沙發</div>
+                            <div class="carousel-span">
+                                「我一直想找一張符合我客廳風格的沙發，但市面上都找不到理想款式。這家店可以完全客製尺寸、布料和顏色，還幫我建議坐感與結構設計，最後做出來的沙發完全符合我期待，真的很滿意！」
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/male.svg" alt="輪播圖片3">
+                            <div class="carousel-caption">張先生｜沙發修理</div>
+                            <div class="carousel-span">
+                                「這張皮沙發是我結婚時買的，對我意義很大。表皮破損後一直捨不得換掉，剛好看到這間店評價很好，就來修看看。結果真的超出預期，皮革重包後質感超棒，連支撐力都改善很多，簡直像重新賦予沙發第二次生命！」
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/female.svg" alt="輪播圖片4">
+                            <div class="carousel-caption">周小姐｜客製沙發</div>
+                            <div class="carousel-span">
+                                「我們家的空間比較特別，一般市售沙發尺寸放不下，這家店可以完全依照我們家的空間量身打造。從選布到設計都很有耐心，最後做出來的沙發不只剛好合，風格也跟整個家搭配，非常滿意！」
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-
-
-
-
-
-
-
-
-
-
-
-            <ul class="write-place">
+<!-- 留言 未完成 -->
+            <!-- <ul class="write-place">
                 <li class="write1">
 
                     <label>貴姓/服務項目 :</label>
@@ -270,9 +210,9 @@
                     <textarea type="textarea" maxlength="200" name="text" id="text"></textarea>
 
                 </li>
-            </ul>
+                <button class="btn" type="submit">送出評論</button>
+            </ul> -->
 
-            <button class="btn" type="submit">送出評論</button>
             <!-- 服務項目 -->
             <div class="chooseServe">
                 <a href="customized 1.html">
@@ -286,14 +226,6 @@
 
             </div>
 
-
-
-
-
-
-
-
-
             <div class="googleMap">
                 <h2>GOOGLE 地圖</h2>
                 <iframe
@@ -302,21 +234,20 @@
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
 
-            <a class="btn-top" href="#head"><img src="img/btn-top.svg" alt=""></a>
-
         </div>
     </div>
-
+    <a id="goTopBtn" class="btn-top" href="#head"><img src="img/btn-top.svg" alt=""></a>
+    
     <!-- footer -->
 
 
     <div class="footer">
         <p>地址：台北市中山區南京東路三段219號4F　｜　連絡電話：0932-120-811　｜　市話：02 2712 0589</p>
-        <div>
+        <div class="fontawesome">
             <a href=""><i class="fa-brands fa-line fas fa-star fa-2x" style="color: white;"></i></a>
             <a href=""><i class="fa-brands fa-square-facebook fas fa-star fa-2x" style="color: white;"></i></a>
         </div>
-
+    </div>
 
 
 </body>
