@@ -1,62 +1,70 @@
-$(document).ready(function () {
-    var $carousel = $('.carousel-list');
-    var $items = $('.cards');
-    var currentIndex = 0;
-    var itemCount = $items.length;
-    var autoPlayTimer;
-    var autoPlayDelay = 1000; // 自動播放間隔，單位毫秒
-    var cardWidth = 300; // 一張卡片的寬度，單位像素
 
-    // 如果卡片數量小於2，不需要輪播
-    if (itemCount < 2) return;
+document.addEventListener('DOMContentLoaded', function () {
+    const track = document.querySelector('.carousel-track');
+    const items = document.querySelectorAll('.carousel-item'); 
+    const originalItems = items.length / 2;
+    let currentPosition = 0; 
+    let scrollSpeed = 1; 
+    let animationId;
 
-    // 設置初始位置
-    function resetCarousel() {
-        var translateX = -currentIndex * cardWidth + 'px';
-        $carousel.css('transform', 'translateX(' + translateX + ')');
+    function init() {
+        
+        Promise.all(Array.from(document.querySelectorAll('.carousel-item img')).map(img => {
+            if (img.complete) return Promise.resolve();
+            return new Promise(resolve => {
+                img.onload = resolve;
+                img.onerror = resolve;
+            });
+        })).then(() => {
+            setupCarousel();
+        });
     }
 
-    // 自動播放
-    function startAutoPlay() {
-        stopAutoPlay();
-        autoPlayTimer = setInterval(function () {
-            // 增加索引，準備顯示下一張
-            currentIndex++;
+    // 設置輪播牆
+    function setupCarousel() {
+        const containerWidth = document.querySelector('.carousel-container').offsetWidth;
+        const itemWidth = containerWidth * 0.25;
+        items.forEach(item => {
+            item.style.width = `${itemWidth}px`;
+        });
 
-            // 如果已經是最後一張之後，重置為第一張
-            if (currentIndex >= itemCount) {
-                currentIndex = 0;
-            }
-
-            // 移動到新的位置
-            resetCarousel();
-        }, autoPlayDelay);
+        track.style.transform = 'translateX(0)';
+        startAnimation();
+        setupEventListeners();
     }
 
-    // 停止自動播放
-    function stopAutoPlay() {
-        clearInterval(autoPlayTimer);
-    }
-
-    // 滑鼠進入停止，離開繼續
-    $('.carousel-container').hover(
-        function () {
-            stopAutoPlay();
-        },
-        function () {
-            startAutoPlay();
+    // 開始滾動動畫
+    function startAnimation() {
+        if (animationId) {
+            cancelAnimationFrame(animationId);
         }
-    );
+        function animate() {
+            currentPosition += scrollSpeed;
+            const itemWidth = items[0].offsetWidth;
+            if (currentPosition >= itemWidth * originalItems) {
+                currentPosition = 0;
+            }
+            track.style.transform = `translateX(${-currentPosition}px)`;
+            animationId = requestAnimationFrame(animate);
+        }
+        animate();
+    }
 
-    // 響應式調整 - 當窗口大小改變時，重新定位輪播
-    $(window).resize(function () {
-        resetCarousel();
-    });
-
-    // 設置初始位置，確保從第一張開始
-    currentIndex = 0;
-    resetCarousel();
-
-    // 開始自動播放
-    startAutoPlay();
+    // 設置事件監聽器
+    function setupEventListeners() {
+        document.querySelector('.carousel-container').addEventListener('mouseenter', function () {
+            if (animationId) {
+                cancelAnimationFrame(animationId);
+                animationId = null;
+            }
+        });
+        document.querySelector('.carousel-container').addEventListener('mouseleave', function () {
+            if (!animationId) {
+                startAnimation();
+            }
+        });
+    }
+    init();
 });
+
+  
