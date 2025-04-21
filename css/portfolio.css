@@ -6,7 +6,9 @@ html {
 }
 
 .warrper {
+
     margin: 0 auto;
+    text-align: center;
 }
 
 .warrper h1 {
@@ -18,18 +20,12 @@ html {
 }
 
 .warrper ul {
-
-
-
-    justify-content: space-between;
-
-    /* column-gap: 10px;
-row-gap: 25px ; */
+    justify-content: flex-start;
 
     margin: 0 auto;
-    width: 1100px;
-    row-gap: 25px;
-    column-gap: 25px;
+    max-width: 1000px;
+    ;
+    gap: 10px 2px;
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 50px;
@@ -50,7 +46,7 @@ row-gap: 25px ; */
 
 .warrper p {
     margin: 30px auto 50px;
-    width: 600px;
+    max-width: 600px;
     letter-spacing: 5px;
 
     font-size: 16px;
@@ -58,16 +54,17 @@ row-gap: 25px ; */
 }
 
 .warrper a {
-    /* padding: 30px; */
+    padding: 10px;
     display: block;
     text-decoration: none;
 
 }
 
 .warrper img {
-    margin: 0 20px;
-    width: 300px;
-    height: 300px;
+
+    max-width: 300px;
+    max-height: 300px;
+
     object-fit: contain;
 }
 
@@ -92,52 +89,44 @@ row-gap: 25px ; */
 
 }
 
+/* befor-after */
+.picture {
+    /* background-color: #6779CA; */
 
+    background-image: url('../img/sofa/portfolio3-af.JPG');
 
-
-
-
-.contrast {
+    background-size: cover;
+    margin: 50px auto;
+    width: 800px;
+    height: 550px;
     position: relative;
-
-    margin: 0 auto;
-    width: 600px;
-    height: 400px;
-    transition: 1s;
-
-
-
 }
 
-.be {
-    transition: 1s;
-}
-
-.contrast:hover .be {
-    opacity: 0;
-
-
-
-
-
-}
-
-
-
-
-
-.contrast img {
-    margin: 0 auto;
-
+.cover {
+    /* background-color: #646464; */
+    background-size: cover;
     position: absolute;
-    top: 0;
     left: 0;
-    width: 600px;
-    height: 400px;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+
+    background-image: url('../img/sofa/portfolio3-bf.JPG');
+}
+
+.drag {
+    position: absolute;
+    background-color: #6779CA;
+    width: 10px;
+    height: 100%;
+    left: 50%;
+    top: 0;
+    cursor: ew-resize;
 }
 
 .portfolio-2 {
     font-family: Zen Old Mincho;
+    text-align: center;
 }
 
 .portfolio-2 h1 {
@@ -162,70 +151,33 @@ row-gap: 25px ; */
     line-height: 30px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .btn {
-
-
-
-    border: none;
-
-    width: 150px;
-    height: 35px;
-    border-radius: 6px;
-
-    background-color: #6779CA;
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
-    margin: 60px 525px;
-
-    box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.3);
+    display: inline-block;
 }
 
-.btn a {
-    color: white;
-    text-decoration: none;
+@media screen and (max-width:820px) {
+    .warrper {
+        padding-top: 60px;
+
+    }
+
+    .warrper ul {
+
+        max-width: 700px;
+
+        justify-content: space-between;
+
+        gap: 10px 25px;
+    }
+
+    .portfolio-2 {
+        padding-top: 60px;
+    }
+    .warrper ul {
+        justify-content: center;
+    }
+.picture{
+    width: 90%;
 }
 
-
-
-
-.btn:hover {
-
-    box-shadow: inset 5px 5px 5px rgb(0, 0, 0, 0.3);
 }
-
-.btn-top img {
-
-    width: 50px;
-    height: 50px;
-
-
-
-    position: fixed;
-    top: 530px;
-    right: 50px;
-}
-
-
-
-/*  */
